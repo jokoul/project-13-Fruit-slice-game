@@ -17,9 +17,12 @@ html {
   background: -o-linear-gradient(#f8f594, #d5d533);
   border-radius: 10px;
   padding: 1rem;
+  color: #5d12e7;
+  text-align: center;
 }
 .h1 a {
   text-decoration: none;
+  color: #5d12e7;
 }
 
 #container {
@@ -67,11 +70,13 @@ html {
 }
 
 #instruction {
-  width: 80%;
+  width: 90%;
   height: 50px;
   background-color: #b481d9;
   margin: 10px auto;
   text-align: center;
+  font-size: 1.2rem;
+  color: white;
   line-height: 25px;
   box-shadow: 0px 4px #8153a8;
   -moz-box-shadow: 0px 4px #8153a8;
