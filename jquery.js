@@ -76,7 +76,7 @@ $(function () {
     //hide fruit
     $("#fruit1").hide("explode", 500); //slice fruit => to use args in hide(), we must embed "jquery UI" before else it won't work.
     //send new fruit
-    setTimeout(startAction, 800);
+    setTimeout(startAction, 800); //Under 800 can cause a problem
   });
 
   //functions
@@ -97,7 +97,7 @@ $(function () {
     chooseFruit(); //choose a random fruit
     //generate random horizontal position
     $("#fruit1").css({
-      left: Math.round(550 * Math.random()),
+      left: Math.round(($("#fruitsContainer").width() - 100) * Math.random()),
       top: -50,
     });
     //generate random step
@@ -113,7 +113,9 @@ $(function () {
           $("#fruit1").show();
           chooseFruit();
           $("#fruit1").css({
-            left: Math.round(550 * Math.random()),
+            left: Math.round(
+              ($("#fruitsContainer").width() - 100) * Math.random()
+            ),
             top: -50,
           });
           step = 1 + Math.round(5 * Math.random());
