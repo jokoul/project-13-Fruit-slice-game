@@ -9,6 +9,11 @@
       content="width=device-width, initial-scale=1, user-scalable=yes"
     />
     <link rel="stylesheet" href="styling.css" />
+    <!--CSS Component of JQUERY UI put here just in case it is needed later-->
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
   </head>
 
   <body>
@@ -25,7 +30,13 @@
       <div id="startreset">Start Game</div>
       <div id="gameOver"></div>
     </div>
+    <audio id="slicesound">
+      <source src="./audio/19312__martian__classic-double-swwosh.mp3" />
+      <source src="./audio/19312__martian__classic-double-swwosh.ogg" />
+    </audio>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--JQUERY UI  come after Jquery library because it needs some function from jquery lib to work-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="./jquery.js"></script>
   </body>
 </html>
